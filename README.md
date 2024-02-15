@@ -1,2 +1,2 @@
 # LinearRegressionProject
-Data Mining homework project on Data Mining
+Data Mining homework project on Linear Regression
