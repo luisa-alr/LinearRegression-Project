@@ -1,6 +1,5 @@
-## Data Mining - Linear Regression
-Luisa Rosa
-Spring 2024
+Data Mining - Linear Regression
+Luisa Rosa - Spring 2024
 ---
 ## Instructions:
 + Download all files (2 Python programs and 6 CSV datasets)
