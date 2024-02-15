@@ -1,6 +1,6 @@
-# Luisa Rosa
-# Linear Regression
-# Spring 2024
+## Luisa Rosa
+## Linear Regression
+## Spring 2024
 ---
 ## Intructions:
 + Download all files (2 python programs and 6 csv datasets)
