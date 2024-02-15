@@ -11,11 +11,11 @@ Luisa Rosa - Spring 2024
 ## Question 1: 
 Implement L2 regularized linear regression algorithm with λ ranging from 0 to 150(integers only). For each of the 6 datasets, plot both the training set MSE and the test set MSE as a function of λ (x-axis) in one graph.
 
-    * (a) For each dataset, which λ value gives the least test set MSE?
+    * a) For each dataset, which λ value gives the least test set MSE?
 
-    * (b) For each of the datasets 100-100, 50(1000)-100, 100(1000)-100, provide an additional graph with λ ranging from 1 to 150.
+    * b) For each of the datasets 100-100, 50(1000)-100, 100(1000)-100, provide an additional graph with λ ranging from 1 to 150.
 
-    * (c) Explain why λ = 0 (i.e., no regularization) gives abnormally large MSEs for those three datasets in (b).
+    * c) Explain why λ = 0 (i.e., no regularization) gives abnormally large MSEs for those three datasets in (b).
 
 ### Solution:
 Linear Regression (supervised learning) with L2 Regression.
