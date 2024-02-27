@@ -5,7 +5,7 @@ Luisa Rosa - Spring 2024
 + Download all files (2 Python programs and 6 CSV datasets)
 + Run main.py
 + Save plots if needed
-+ To see the answers to the questions, they will printed out to the terminal but are also included here and in the pdf
++ To see the answers to the questions, they will printed out to the terminal but are also included in the pdf
 
 ---
 ## Question 1: 
@@ -42,15 +42,15 @@ take the difference of the predicted and actual values and square the values, th
 ---
 
 a) For the test dataset A lambda 9 gives the least MSE 4.1596639277780625
-For the test dataset B lambda 22 gives the least MSE 5.072750457735282
+For the test dataset B (lambda: 0-150) lambda 22 gives the least MSE 5.072750457735282
 For the test dataset C lambda 27 gives the least MSE 4.318370456639974
 For the test dataset D (lambda: 0-150) lambda 8 gives the least MSE 5.512273909883558
 For the test dataset E (lambda: 0-150) lambda 19 gives the least MSE 5.196199710503634
-For the test dataset F (lambda: 0-150) lambda 24 gives the least MSE 4.843720381414155
+For the test dataset F lambda 24 gives the least MSE 4.843720381414155
 
 b) For the test dataset D (lambda: 1-150) lambda 7 gives the least MSE 5.512273909883558
 For the test dataset E (lambda: 1-150) lambda 18 gives the least MSE 5.196199710503634
-For the test dataset B (lambda: 1-150) lambda 21 gives the least MSE 5.072750457735282
+For the test dataset F (lambda: 1-150) lambda 21 gives the least MSE 5.072750457735282
 
 c) When λ = 0 (no regularization), the model becomes prone to overfitting. Without regularization, the model tries to fit the training data as closely as possible, often taking into account noise and outliers, which can lead to poor generalization on unseen data. This overfitting phenomenon results in abnormally large mean squared errors (MSEs) because the model's predictions deviate significantly from the true values in the test set.
 
@@ -64,16 +64,16 @@ From the plots in question 1, we can tell which value of λ is best for each dat
 * (d) What are the factors affecting the performance of CV?
 
 ### Solution:
-a) For the test dataset A lambda 13 gives the least MSE 4.186549495447378
-For the test dataset B lambda 20 gives the least MSE 4.466572219197872
-For the test dataset C lambda 39 gives the least MSE 4.139641074529679
-For the test dataset D lambda 24 gives the least MSE 5.285221355859347
-For the test dataset E lambda 31 gives the least MSE 4.852209825819767
-For the test dataset F lambda 47 gives the least MSE 4.876912890852046
+a) For the test dataset A lambda 13 gives the least MSE 3.76410523
+For the test dataset B lambda 20 gives the least MSE 3.4678323
+For the test dataset C lambda 39 gives the least MSE 3.75522682
+For the test dataset D lambda 24 gives the least MSE 3.6829121
+For the test dataset E lambda 31 gives the least MSE 3.71612021
+For the test dataset F lambda 47 gives the least MSE 3.79432125
 
-b) The lambda and MSE values we generated on question 1(a) differed with the use of cross-validation. In question 1, we will know which value of λ is best for each dataset once we know the test data and its labels. However, with a 10-fold CV we are finding the best λ value from the training set. CV provides a more robust and data-driven approach to selecting the optimal lambda value. It takes into account the dataset's characteristics and helps avoid overfitting. In question 1, lambda varied from 9 to 27, while in question 2, lambda varied from 13 to 47.
+b) The lambda and MSE values we generated on question 1(a) differed with the use of cross-validation. In question 1, we will know which value of λ is best for each dataset once we know the test data and its labels. However, with a 10-fold CV we are finding the best λ value from the training set. CV provides a more robust and data-driven approach to selecting the optimal lambda value. It takes into account the dataset's characteristics and helps avoid overfitting. In question 1, lambda varied from 9 to 27, while in question 2, lambda varied from 13 to 47. The MSEs in question 1a are greater than the ones in question 2a.
 
-c) Cross-Validation increases computational cost and time, as it requires training and testing the model k times. Cost of Computation = K folds x choices of lambda.
+c) Cross-Validation increases computational cost and time, as it requires training and testing the model k times. Cost of Computation = K folds x choices of lambda. And then, re-train the testing data with the best value of lambda found.
 
 d) The performance of CV can be affected by several factors, including the choice of CV technique (k-fold, leave-one-out), the size of the dataset, the variability and complexity of the model being evaluated, and the presence of error or missing data (noise).
 
